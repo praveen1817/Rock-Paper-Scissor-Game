@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <style>
+        .one{
+            display:flex;
+            justify-content:center;
+            margin-top:200px;
+        }
+        button{
+            margin:20px;
+            width:50px;
+            height:50px;
+            background-color:black;
+            color:white;
+            
+        }
+        .main{
+            background-color:black;
+            color:white;
+        }
+        
+    </style>
+</head>
+<body class="main">
+    <center>
+    <h1>Rock Paper Scissor</h1></center>
+    <div class="one">
+    <button onclick="
+    a=Math.random();
+        if (a<0.35){
+            console.log('computes`s choice is Rock');
+            console.log('It`s draw');
+            alert('It`s Draw');
+            tie++;
+        }
+        else if (a>0.35 & a<0.6){
+            console.log('Computer`s choice is paper');
+            console.log('you lose');
+            alert('You lose');
+            lose++;
+        }
+        else{
+            console.log('Computer`s choice is scissor');
+            console.log('You Won');
+            alert('You won');
+            win++;
+        }
+        "> Rock</button>
+    <button onclick="
+    a=Math.random();
+        if (a<0.35){
+            console.log('computes`s choice is Rock');
+            console.log('You win');
+            alert('You won');
+            win++;
+        }
+        else if (a>0.35 & a<0.6){
+            console.log('Computer`s choice is paper');
+            console.log('It`s Draw');
+            alert('It`s Draw');
+            tie++;
+        }
+        else{
+            console.log('Computer`s choice is scissor');
+            console.log('You lose');
+            alert('You lose');
+            lose++;
+        }
+    ">Paper</button>
+    <button onclick="
+    a=Math.random();
+        if (a<0.35){
+            console.log('computes`s choice is Rock');
+            console.log('You lose');
+            alert('You lose');
+            lose++;
+        }
+        else if (a>0.35 & a<0.6){
+            console.log('Computer`s choice is paper');
+            console.log('you won');
+            alert('You won');
+            win++;
+        }
+        else{
+            console.log('Computer`s choice is scissor');
+            console.log('It`s Draw');
+            alert('It`s Draw');
+            tie++;
+        }
+    ">Scissor</button>
+    <button onclick="
+    alert(`Won: ${win} lose: ${lose} tie: ${tie}`);
+    ">Result</button>
+    </div>
+    <script>
+        let a=Math.random();
+        let win=0;
+        let lose=0;
+        let tie=0;
+        
+    </script>
+</body>
+</html>
